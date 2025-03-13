@@ -61,11 +61,11 @@ namespace BunnyCDN.TokenAuthentication.Tests
                 t.UserIp = "1.2.3.4";
             });
 
-            url.ShouldBe<string>("https://token-tester.b-cdn.net/300kb.jpg?token=jjTwdhWdTUAQSKbPyKGH9FSLqBe-FisgVWwGXnYEPIQ&expires=1598024587");
+            url.ShouldBe<string>("https://token-tester.b-cdn.net/300kb.jpg?token=xUWMwsZcXfzxMvTTFiKAN6if1WBhDZV1Shjt_GOrjG0&expires=1598024587");
         }
 
         [Test]
-        public void WithIPAddressAllowed_ConvienenceMethod()
+        public void WithIPAddressAllowed_ConvenienceMethod()
         {
             var utcNowPlusOneHour = DateTimeOffset.UtcNow.Add(TimeSpan.FromHours(1));
 
